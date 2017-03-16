@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  safeframes_examples:
+    image: nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./examples/:/usr/share/nginx/html/
+    working_dir: /usr/share/nginx/
+    networks:
+      safeframes_network:
+        aliases:
+          - safeframes.examples
+  safeframes_assets:
+    build: .
+    ports:
+      - 8081:80
+    volumes:
+      - ./src:/usr/share/nginx/html/
+    networks:
+      safeframes_network:
+        aliases:
+          - safeframes.assets
+networks:
+  safeframes_network:
+    driver: bridge
