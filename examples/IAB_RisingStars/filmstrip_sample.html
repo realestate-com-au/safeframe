@@ -55,7 +55,7 @@ One application involves aligning the five segments of the Filmstrip to the five
 		 // relative source is relative to the r.html bootstrap file  "../../examples/IAB_RisingStars/AdFiles/pushdownAdBootstrap.js",	
 		 // ALWAYS USE ABSOLUTE SOURCES
 		// "src": "http://safeframes.emination.com/risingStars/adfiles/pushdownAdBootstrap.js", 
-		"src": "http://safeframes.emination.com/risingStars/adfiles/filmstripAdBootstrap.js",
+		"src": "http://localhost:8080/IAB_RisingStars/AdFiles/filmstripAdBootstrap.js",
 		
 		"conf":
 		{
@@ -85,11 +85,11 @@ top level domain from the host site.
 -->
 	
 <script type="text/javascript" 
-	src="https://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/js/lib/base.js"></script>
+	src="http://safeframes.assets:8081/js/lib/base.js"></script>
 <script type="text/javascript" 
-	src="https://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/js/host/host.js"></script>
+	src="http://safeframes.assets:8081/js/host/host.js"></script>
 <script type="text/javascript" 
-	src="https://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/js/lib/boot.js"></script>
+	src="http://safeframes.assets:8081/js/lib/boot.js"></script>
 
 
 
@@ -113,7 +113,7 @@ top level domain from the host site.
 				var conf	= new $sf.host.Config({
 					// Should be absolute path to render file hosted on CDN "../../src/html/r.html",
 					//renderFile:	"http://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/html/r.html",
-					renderFile:	"http://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/html/r.html",
+					renderFile:	"http://safeframes.assets:8081/html/r.html",
 					onPosMsg: posMessageCallback,
 					positions: {}
 				});

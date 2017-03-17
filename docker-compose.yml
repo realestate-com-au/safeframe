@@ -13,7 +13,7 @@ services:
         aliases:
           - safeframes.examples
   safeframes_assets:
-    build: .
+    image: nginx
     ports:
       - 8081:80
     volumes:

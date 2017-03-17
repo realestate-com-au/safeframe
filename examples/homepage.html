@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link href="css/style.css" rel="stylesheet">-->
+</head>
+
+<body>
+  <div id="medrec1"></div>
+  <script type="text/javascript" src="http://safeframes.assets:8081/js/lib/base.js"></script>
+  <script type="text/javascript" src="http://safeframes.assets:8081/js/host/host.js"></script>
+  <script type="text/javascript" src="http://safeframes.assets:8081/js/lib/boot.js"></script>
+  <script type='text/x-safeframe' class='sf_data'>
+    { 
+      "id": "medrec1",
+      "src": "http://sasinator.realestate.com.au/rea/jserver/site=rea/area=buy.homepage/hideable=true/proptype=null/state=null/pos=medrec2/size=300x250",
+      "conf": { "w": 300, "h": 250, "dest": "medrec1", "supports" : { "exp-push" : "1", "read-cookie" : "1", "write-cookie": "1" } }
+    }
+  </script>
+  <script type="text/javascript">
+    /**
+     * Initialize a new SafeFrames publisher configuration
+     */
+    (function () {
+      var conf = new $sf.host.Config({
+        renderFile: "http://safeframes.assets:8081/html/r.html",
+        positions: {}
+      });
+    })();
+  </script>
+</body>
+
+</html>
